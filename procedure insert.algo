@@ -1,0 +1,14 @@
+PROCEDURE insert_sort(tab : ARRAY_OF integer[11];)
+VAR
+    i,j, temp:INTEGER
+BEGIN
+    FOR i FROM 1 TO tab.length STEP 1 DO
+    temp := tab[i];
+    j:= j-1 ;
+    WHILE ((j<= 0) &&( tab[j])> temp) DO
+        tab[j++1] := tab[j]
+        j:=j-1 ;
+    END_WHILE
+      tab [j+1] := temp ;
+    END_FOR
+END 
